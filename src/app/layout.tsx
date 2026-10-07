@@ -1,22 +1,28 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Demo Next.js",
-  description: "Lordicon with Next.js",
+    title: { default: 'Lordicon × Next.js', template: '%s · Lordicon × Next.js' },
+    description: 'Animated Lordicon icons in a Next.js app, with @lordicon/react.',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: LayoutProps<'/'>) {
+    return (
+        <html lang="en">
+            <body>
+                <header className="header">
+                    <Link href="/" className="brand">
+                        Lordicon × Next.js
+                    </Link>
+                    <nav className="nav">
+                        <Link href="/">Basics</Link>
+                        <Link href="/state">React state</Link>
+                        <Link href="/server-rendering">Server rendering</Link>
+                    </nav>
+                </header>
+                <main className="main">{children}</main>
+            </body>
+        </html>
+    );
 }

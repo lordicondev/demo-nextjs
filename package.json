@@ -1,28 +1,30 @@
 {
-  "name": "demo-nextjs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "14.2.5",
-    "@lordicon/element": "^1.7.0",
-    "@lordicon/react": "^1.7.0",
-    "@lordicon/helpers": "^1.7.0",
-    "lottie-web": "^5.12.2"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+    "name": "demo-nextjs",
+    "version": "2.0.0",
+    "private": true,
+    "description": "Animated Lordicon icons in a Next.js app, with @lordicon/react.",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "dependencies": {
+        "@lordicon/react": "^2.0.0",
+        "next": "16.4.0",
+        "react": "19.3.0",
+        "react-dom": "19.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "16.4.0",
+        "prettier": "^3",
+        "typescript": "^5"
+    }
 }

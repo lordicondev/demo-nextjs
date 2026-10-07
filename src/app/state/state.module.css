@@ -1,0 +1,45 @@
+.products {
+    max-width: 480px;
+    margin-top: 16px;
+    list-style: none;
+}
+
+.product {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.price {
+    margin-left: 6px;
+    color: var(--muted);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.input {
+    min-width: 220px;
+    padding: 9px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font: inherit;
+}
+
+.status {
+    flex-basis: 100%;
+    min-height: 1.5em;
+    color: var(--muted);
+}
+
+.next {
+    margin-top: 48px;
+}
