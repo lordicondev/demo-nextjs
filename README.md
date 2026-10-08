@@ -4,8 +4,6 @@ Animated [Lordicon](https://lordicon.com/) icons in a Next.js 16 app, with
 [`@lordicon/react`](https://www.npmjs.com/package/@lordicon/react): icons in Server Components,
 icons that follow React state, and server rendering that does not shift the page.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/lordicondev/demo-nextjs)
-
 ```sh
 npm install
 npm run dev        # http://localhost:3000

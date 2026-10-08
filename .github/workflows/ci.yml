@@ -19,5 +19,5 @@ jobs:
             - run: npm run lint
             - run: npm run format:check
             - run: npm run build
-            # Webpack too: StackBlitz runs it, and so do many apps.
+            # Webpack too: many apps still build with it.
             - run: npx next build --webpack
